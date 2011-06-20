@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Chieftain</title>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+
+<body>
+<a href="http://github.com/paulmillr/chieftain">
+    <img class="forkme" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+</a>
+
+<div id="container">
+    <div class="tag-bar">
+        <h2><a href="/">chieftain</a>
+            <span class="small">by <a href="http://paulmillr.com/">Paul Miller</a></span>
+        </h2>
+    </div>
+    
+    <!--<div class="tag-bar"><h2 id="benchmarks"><a href="#benchmarks">Benchmarks</a></h2></div>
+    <div class="full">
+    </div>-->
+    <div class="tag-bar"><h2 id="compare"><a href="#compare">Compare features</a></h2></div>
+    <div class="full">
+        <table class="wikitable sortable" style="font-size:85%;" id="sortable_table_id_0">
+        <tbody><tr class="even">
+        <th>&nbsp;</th>
+        <th>Futaba</th>
+        <th><abbr title="4chan.org">Yotsuba</abbr></th>
+        <th>Wakaba</th>
+        <th>Kusaba X</th>
+        <th>FBE</th>
+        <th>Kotoba</th>
+        <th>Orphereus</th>
+        <th>Xyntaba</th>
+        <th>Hanabira</th>
+        <th>chieftain</th>
+        </tr>
+
+
+        <tr class="odd">
+        <th> Create posts without registration
+        </th><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Tripcodes
+        </th><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Built-in captcha
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> /int/ernational boards
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Bugtracker boards
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+
+
+        <tr class="even">
+        <th> Many boards within one installation
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> User-viewable ban reasons
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Ability to restrict posting to certain users
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="planned"> ???
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Ability to show messages only to their posters
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td></tr>
+
+        <tr class="even">
+        <th> Posts premoderation
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td></tr>
+
+        <tr class="odd">
+        <th> Moving threads between boards
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Thread closing
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Thread pinning
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Ability to hide threads
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Customizable interface
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Post preview
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Inline image expanding
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Thread expanding
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Quick reply
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="partial"> Partial
+        </td><td class="partial"> Partial
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Ability to unfold long message without visiting thread
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> YouTube support
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Answers map
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> NSFW button
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> RSS
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Search
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Bookmarks
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> Ability to attach multiple files to message
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td></tr>
+
+        <tr class="odd">
+        <th> Wakabamark support
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="odd">
+        <th> Complaints on messages
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td></tr>
+
+        <tr class="even">
+        <th> Oekaki
+        </th><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="partial"> Partial
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td></tr>
+        
+        <tr class="odd">
+        <th> Mobile version
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+        
+        <tr class="odd">
+        <th> PDA version
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+        
+        <tr class="even">
+        <th> Realtime posting
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+        
+        <tr class="odd">
+        <th> User feeds
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td></tr>
+
+        <tr class="even">
+        <th> API
+        </th><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td>
+        </tr>
+
+        <tr class="odd">
+        <th> Open source
+        </th><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="yes"> Yes
+        </td><td class="yes"> Yes
+        </td><td class="no"> No
+        </td><td class="no"> No
+        </td><td class="partial"> Later
+        </td>
+        </tr>
+
+        </tbody></table>
+        <a href="http://noobtype.co.cc/index.php/%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%B2%D0%B8%D0%B6%D0%BA%D0%BE%D0%B2_%D0%B4%D0%BB%D1%8F_%D0%B8%D0%BC%D0%B8%D0%B4%D0%B6%D0%B1%D0%BE%D1%80%D0%B4%D0%BE%D0%B2">Russian version</a>
+    </div>
+    
+    <div class="footer">
+        get the source code on GitHub :
+        <a href="http://github.com/paulmillr/chieftain">paulmillr/chieftain</a>
+        <p>Design of this page taken from <a href="http://www.w3.org/html/logo/">html5 logo presentation</a> under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0 license</a>.</p>
+    </div>
+
+</div>
+</body>
+</html>

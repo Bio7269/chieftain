@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Chieftain</title>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+
+<body>
+<a href="http://github.com/paulmillr/chieftain">
+    <img class="forkme" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+</a>
+
+<div id="container">
+    <div class="tag-bar">
+        <h2><a href="/">chieftain</a>
+            <span class="small">by <a href="http://paulmillr.com/">Paul Miller</a></span>
+        </h2>
+    </div>
+    <div class="tag-bar"><h2 id="mac"><a href="#mac">Installing on Mac OS X</a></h2></div>
+    <div class="full">
+        <ol>
+            <li>If you already have everything needed for pre-install, you can skip steps up to <a href="#gotcha">this step</a>.</li>
+            <li>
+                Install <a href="http://distfiles.macports.org/MacPorts/MacPorts-1.9.2-10.6-SnowLeopard.dmg">MacPorts</a> 
+                (versions for <a href="http://distfiles.macports.org/MacPorts/MacPorts-1.9.2-10.5-Leopard.dmg">Leopard</a>, 
+                <a href="http://distfiles.macports.org/MacPorts/MacPorts-1.9.1-10.4-Tiger.dmg">Tiger</a>).
+            </li>
+            <li>
+                Now enter Terminal (/Applications/Utilities/Terminal) and enter commands to install Python:
+                <pre>sudo port install wget python27 python-select py27-pip</pre>
+                Select Python 2.7 as main python interpreter:
+                <pre>sudo python_select python27</pre>
+            </li>
+            <li>
+                Install MySQL server and set up it if you don't have any SQL database:
+                <pre>sudo port install mysql5-server &amp;&amp; sudo -u _mysql mysql_install_db5</pre>
+                This creates new MySQL user 'root' with no password:
+                <pre>sudo /opt/local/lib/mysql5/bin/mysqladmin -u root password ''</pre>
+            </li>
+            <li>Install Memcached and python binding for it
+                <pre>sudo port install memcached</pre>
+            </li>
+            <li id="gotcha">Download chieftain and unpack it
+                <pre>cd ~/Downloads &amp;&amp; wget https://github.com/paulmillr/chieftain/tarball/master</pre>
+            </li>
+            <li>
+                Install all pythonic chieftain dependencies:
+                <pre>sudo pip-2.7 install -r pip-req.txt</pre>
+            </li>
+            <li>Enter chieftain directory.
+                Copy local_settings.example.py to local_settings.py and edit it for your configuration:
+                <pre>mv local_settings.example.py local_settings.py &amp;&amp; mate local_settings.py</pre>
+                Sync database data:
+                <pre>python manage.py syncdb</pre>
+            </li>
+            <li>Now run server:
+                <pre>python manage.py runserver 127.0.0.1:8000</pre>
+            </li>
+            <li>Open browser and go to <a href="http://127.0.0.1:8000">127.0.0.1:8000</a>.
+                It works!
+            </li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        get the source code on GitHub :
+        <a href="http://github.com/paulmillr/chieftain">paulmillr/chieftain</a>
+        <p>Design of this page taken from <a href="http://www.w3.org/html/logo/">html5 logo presentation</a> under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0 license</a>.</p>
+    </div>
+</div>
+</body>
+</html>
