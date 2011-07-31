@@ -1,5 +1,6 @@
 .chieftain-logo {
-  background-image: url("../img/logo.png"); }
+  height: 495px;
+  background: #fff url("../img/logo.png") no-repeat; }
 .download {
   margin-top: 400px; }
   .download .zip {
@@ -8,3 +9,6 @@
     float: right; }
   .download a:link, .download a:visited {
     color: #eee; }
+
+.cell-screenshot {
+  width: 100%; }
