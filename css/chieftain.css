@@ -3,7 +3,8 @@
   background: #fff url("../img/logo.png") no-repeat;
   background-position: center; }
 .download {
-  margin-top: 400px; }
+  position: relative;
+  top: 470px; }
   .download .zip {
     float: right; }
   .download .tar {
