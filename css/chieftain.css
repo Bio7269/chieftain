@@ -1,6 +1,7 @@
 #chieftain-logo {
-  height: 495px;
-  background: #fff url("../img/logo.png") no-repeat; }
+  height: 565px;
+  background: #fff url("../img/logo.png") no-repeat;
+  background-position: center; }
 .download {
   margin-top: 400px; }
   .download .zip {
