@@ -14,3 +14,6 @@
 
 .cell-screenshot {
   width: 100%; }
+.screenshot-list .cell-screenshot {
+  width: 20%;
+  float: left; }
