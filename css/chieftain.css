@@ -1,10 +1,9 @@
 #chieftain-logo {
-  height: 565px;
   background: #fff url("../img/logo.png") no-repeat;
   background-position: center; }
 .download {
   position: relative;
-  top: 470px; }
+  top: 550px; }
   .download .zip {
     float: right; }
   .download .tar {
